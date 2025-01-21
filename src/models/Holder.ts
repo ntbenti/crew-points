@@ -1,5 +1,11 @@
+// src/models/Holder.ts
+
 import mongoose, { Schema, Document } from 'mongoose';
 
+/**
+ * IHolder Interface
+ * Represents a holder with their address, NFTs, token balance, points, block number, and timestamp.
+ */
 export interface IHolder extends Document {
   address: string;
   nfts: number[];
@@ -18,4 +24,6 @@ const HolderSchema: Schema = new Schema({
   time: { type: Date, required: true },
 });
 
-export default mongoose.model<IHolder>('Holder', HolderSchema);
+const Holder = mongoose.model<IHolder>('Holder', HolderSchema);
+
+export default Holder;
