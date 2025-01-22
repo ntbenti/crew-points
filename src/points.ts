@@ -2,6 +2,7 @@
 
 import { rarityCategories, godlikeNFTs, godlikeTokenIds, getNFTDataByTokenId } from "./config";
 import { NFTData } from "./types";
+import logger from './logger';
 
 /**
  * Determines the rarity multiplier for a given tokenId.
@@ -21,7 +22,7 @@ const getRarityMultiplier = (tokenId: number): number => {
   // Get NFT data from nfts.json
   const nftData: NFTData | undefined = getNFTDataByTokenId(tokenId);
   if (!nftData) {
-    console.warn(`NFT Data not found for tokenId: ${tokenId}. Using default multiplier.`);
+    logger.warn(`NFT Data not found for tokenId: ${tokenId}. Using default multiplier.`);
     return 1.0; // Default multiplier if NFT data not found
   }
 
@@ -33,7 +34,7 @@ const getRarityMultiplier = (tokenId: number): number => {
   );
 
   if (!category) {
-    console.warn(`Rarity category not found for rank: ${rank}. Using default multiplier.`);
+    logger.warn(`Rarity category not found for rank: ${rank}. Using default multiplier.`);
     return 1.0; // Default multiplier if category not found
   }
 

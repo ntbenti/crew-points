@@ -13,47 +13,47 @@ import nfts from "./nfts.json";
 export const rarityCategories: RarityData[] = [
   {
     category: "Celestial",
-    startRank: 1,
-    endRank: 429,
-    minMultiplier: 1.6,
-    maxMultiplier: 1.8,
+    startRank: 2501,
+    endRank: 3333,
+    minMultiplier: 1.0,
+    maxMultiplier: 1.1,
   },
   {
     category: "Divine",
-    startRank: 430,
-    endRank: 1093,
-    minMultiplier: 1.3,
-    maxMultiplier: 1.6,
-  },
-  {
-    category: "Ascendant",
-    startRank: 1094,
-    endRank: 2013,
+    startRank: 1667,
+    endRank: 2500,
     minMultiplier: 1.1,
     maxMultiplier: 1.3,
   },
   {
+    category: "Ascendant",
+    startRank: 834,
+    endRank: 1666,
+    minMultiplier: 1.3,
+    maxMultiplier: 1.6,
+  },
+  {
     category: "Mortal",
-    startRank: 2014,
-    endRank: 3333,
-    minMultiplier: 1.0,
-    maxMultiplier: 1.1,
+    startRank: 1,
+    endRank: 833,
+    minMultiplier: 1.6,
+    maxMultiplier: 1.8,
   },
 ];
 
 /**
  * Godlike NFTs:
- * - Pre-selected NFTs with fixed multipliers between 1.8x and 2.0x.
+ * - Pre-selected NFTs with fixed multipliers between 1.8x and 2.2x.
  * - These are handled separately from the regular rarity categories.
  */
 export const godlikeNFTs: GodlikeNFT[] = [
   // Example entries. Replace with your actual Godlike NFT tokenIds and multipliers.
   { tokenId: 1888, multiplier: 2.2 },
-  { tokenId: 986, multiplier: 2 },
-  { tokenId: 2117, multiplier: 2 },
-  { tokenId: 3193, multiplier: 2 },
-  { tokenId: 2747, multiplier: 2 },
-  { tokenId: 966, multiplier: 2 },
+  { tokenId: 986, multiplier: 2.0 },
+  { tokenId: 2117, multiplier: 2.0 },
+  { tokenId: 3193, multiplier: 2.0 },
+  { tokenId: 2747, multiplier: 2.0 },
+  { tokenId: 966, multiplier: 2.0 },
   { tokenId: 581, multiplier: 1.9 },
   { tokenId: 600, multiplier: 1.9 },
   { tokenId: 1922, multiplier: 1.9 },

@@ -11,12 +11,14 @@
   "description": "",
   "dependencies": {
     "@types/node-cron": "^3.0.11",
+    "big.js": "^6.2.2",
     "dotenv": "^16.4.7",
     "mongoose": "^8.9.5",
     "node-cron": "^3.0.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3",
-    "viem": "^2.22.9",
+    "viem": "^2.22.11",
+    "winston": "^3.17.0",
     "zod": "^3.24.1"
   },
   "devDependencies": {
